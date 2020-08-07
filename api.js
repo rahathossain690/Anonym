@@ -41,7 +41,7 @@ route.post('/signup', auth_controller.sign_up); // to sign up
 route.post('/signout', authentication, auth_controller.sign_out); // to sign out, authentication required
 route.get('/', authentication, profile_controller.get_user_data); // to get user data, authentication required
 route.delete('/', authentication, profile_controller.delete_everyting); // to delete userdata, authentication required
-route.get('/:userid/message/:page', authentication, profile_controller.get_message) // to get message, authentication required
+route.get('/message/:page', authentication, profile_controller.get_message) // to get message, authentication required
 route.post('/:username/message', limiter, message_controller); // to send message, limitation activated
 
 module.exports = route

@@ -58,7 +58,7 @@ module.exports.sign_up = async (req, res)=> {
         uid: profile._id
       }, process.env.SESSION_SECRET);
     
-    res.cookie('anonym_session', token); // corrently signs in already, will verify mail next time.
+    res.cookie('anonym_session', token); // currently signs in already, will verify mail next time.
     res.status(200).send(); 
 }
 
