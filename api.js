@@ -4,7 +4,6 @@ const auth_controller = require('./Controller/Auth')
 const message_controller = require('./Controller/Message')
 const profile_controller = require('./Controller/Profile')
 const authentication = require('./Controller/authentication')
-// const body_parser = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const rateLimit = require("express-rate-limit");
