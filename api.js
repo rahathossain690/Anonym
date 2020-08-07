@@ -43,5 +43,7 @@ route.get('/', authentication, profile_controller.get_user_data); // to get user
 route.delete('/', authentication, profile_controller.delete_everyting); // to delete userdata, authentication required
 route.get('/message/:page', authentication, profile_controller.get_message) // to get message, authentication required
 route.post('/:username/message', limiter, message_controller); // to send message, limitation activated
+route.get('/:username/exists', profile_controller.exists); // to check if any username exists
+route.get('/toggle', authentication, profile_controller.toggle_activation); // to toggle is_active value, authentication required
 
 module.exports = route

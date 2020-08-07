@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
         return
     }
     let profile = await Profile.findOne({username: data.username});
-    if(!profile){ // username doesnt exist
+    if(!profile || !profile.is_active){ // username doesnt exist
         res.status(404).send()
         return 
     }

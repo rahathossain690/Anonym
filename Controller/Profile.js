@@ -1,6 +1,7 @@
 
 const Profile = require('../Model/Profile')
-const Message = require('../Model/Message')
+const Message = require('../Model/Message');
+const { use } = require('../api');
 
 // 1. Update user : not
 // 2. Delete user
@@ -34,4 +35,24 @@ module.exports.get_message = async (req, res) => {
         res.send(result.docs)
     });
 
+}
+
+module.exports.exists = async (req, res) => {
+    let username = req.params.username;
+    if(username == null) {
+        res.send({exists: false});
+        return;
+    }
+    let profile = await Profile.findOne({username = username});
+    if(profile && profile.active) {
+        res.send({exists: false});
+        return;
+    }
+    res.send({exists: true});
+}
+
+module.export.toggle_activation = async (req, res) => {
+    let user = req.locals;
+    await Profile.updateOne({username: user.username}, {$set: {is_active: !use.is_active}})
+    res.send()
 }

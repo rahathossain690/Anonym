@@ -46,6 +46,13 @@ onSuccess:
 1. status code: 200, signs out automatically.
 
 # Profile
+
+## Exists (GET)
+URL: `/<USERNAME>/exits`
+
+onSuccess:
+1. status code: 200, resposnse json: {exists: true|false}.
+
 ## Get user data (GET)
 URL: `/`
 
@@ -66,7 +73,7 @@ onSuccess:
 
 ## Get Messages (GET)
 
-URL: `/message/:page`
+URL: `/message/<PAGE>`
 
 onFail:
 1. status code: 401 if unauthorized.
@@ -76,8 +83,19 @@ onSuccess:
 
 [NB: Each page contains 3 messages]
 
+## Toggle activation (GET)
+URL: `/message/<PAGE>`
+
+onFail:
+1. status code: 401 if unauthorized.
+
+onSuccess:
+1. status code: 200, toggles activation of account.
+
+[NB: If account is deactivated then you will not recieve any message.]
+
 # Send message (POST)
-URL: `/:username/message`
+URL: `/<USERNAME>/message`
 
 body:
 ```
