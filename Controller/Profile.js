@@ -43,7 +43,7 @@ module.exports.exists = async (req, res) => {
         res.send({exists: false});
         return;
     }
-    let profile = await Profile.findOne({username = username});
+    let profile = await Profile.findOne({username : username});
     if(profile && profile.active) {
         res.send({exists: false});
         return;
@@ -51,7 +51,7 @@ module.exports.exists = async (req, res) => {
     res.send({exists: true});
 }
 
-module.export.toggle_activation = async (req, res) => {
+module.exports.toggle_activation = async (req, res) => {
     let user = req.locals;
     await Profile.updateOne({username: user.username}, {$set: {is_active: !use.is_active}})
     res.send()

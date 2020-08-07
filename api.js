@@ -4,7 +4,7 @@ const auth_controller = require('./Controller/Auth')
 const message_controller = require('./Controller/Message')
 const profile_controller = require('./Controller/Profile')
 const authentication = require('./Controller/authentication')
-const cors = require('cors')
+// const cors = require('cors')
 const mongoose = require('mongoose')
 const rateLimit = require("express-rate-limit");
 
@@ -23,8 +23,8 @@ mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology:
 route.use(require('express').urlencoded({ extended: true }));
 route.use(require('express').json());
 
-// CORS enablitiy
-route.use(cors()) // cors enabled for all origins
+// // CORS enablitiy
+// route.use(cors()) // cors enabled for all origins
 
 // to enable CORS for single origin uncomment this portion
 // var corsOptions = {
