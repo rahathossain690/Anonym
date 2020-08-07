@@ -93,4 +93,4 @@ onFail:
 onSuccess:
 1. status code: 200, sends message to USERNAME.
 
-[NB: For protection against spamming messaging request limit is fixed which is 10 messages for every 15 minutes.]
+[NB: For protection against spamming, messaging request limit is fixed which is 10 messages for every 15 minutes.]
