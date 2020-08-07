@@ -10,10 +10,6 @@ const app = express()
 app.use(cookieParser());
 app.use('/api', api); // api middleware: basically backend
 
-//app.use(express.static('View/assets'))
-
-// frontend routes
-
 app.get('/', (req, res) => {
     res.json({yes: "Working"})
 })
