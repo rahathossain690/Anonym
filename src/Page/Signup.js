@@ -62,7 +62,7 @@ class Signup extends React.Component{
             if(res.invalid){
                 this.setState({error: res.invalid})
             } else{
-                history.push('/Anonym/')
+                history.push('/')
                 console.log('logged in')
             }
           }).catch(err => {

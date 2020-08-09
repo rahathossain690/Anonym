@@ -53,7 +53,7 @@ class Signup extends React.Component{
             }
             else{
                 this.setState({loading: false})
-                history.push('/Anonym/')
+                history.push('/')
             }
           }).catch(err => {
                this.setState({loading: false})

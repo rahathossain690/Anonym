@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 // import {createHashHistory} from 'history'
 
 // TODO add site name
-const site_url = "https://rahathossain690.github.io/Anonym/"
+const site_url = "https://rahathossain690.github.io/"
 const BACKEND = "https://anonym-rahat.herokuapp.com/api"
 
 class IndexComponent extends React.Component{
@@ -96,7 +96,7 @@ class IndexComponent extends React.Component{
                 <h1>Anonym</h1>
                 <img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym"/>
                 <h4>Safe, Secure, Special</h4>
-                <h6><Link to="/Anonym/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/Anonym/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
+                <h6><Link to="/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
 
 
                 {this.state.loading === true && <div className="preloader-wrapper active">
@@ -157,9 +157,9 @@ class IndexComponent extends React.Component{
                   </tbody>
                 </table>
                 <br/>
-                <Link to="/Anonym/message"><span className="btn" style={{margin: "10px 10px"}}>Message</span></Link>
+                <Link to="/message"><span className="btn" style={{margin: "10px 10px"}}>Message</span></Link>
 
-                <Link to="/Anonym/signout"><span className="btn" style={{margin: "10px 10px"}}>Signout</span></Link>
+                <Link to="/signout"><span className="btn" style={{margin: "10px 10px"}}>Signout</span></Link>
 
                 {/* <Link to="/delete"><span className="btn red" style={{margin: "10px 10px"}}>Delete Account</span></Link> */}
             </div>

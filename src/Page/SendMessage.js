@@ -88,7 +88,7 @@ class Send extends React.Component{
                 </div>
             }
                 <br/>
-                <Link to="/Anonym/"><span className="btn">Main Page</span></Link>
+                <Link to="/"><span className="btn">Main Page</span></Link>
             </div>
         );
     }
