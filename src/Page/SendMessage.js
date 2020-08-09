@@ -46,7 +46,6 @@ class Send extends React.Component{
         const data = {
             body: this.state.body
         } 
-        this.setState({sent: true, body: ""})
         fetch(BACKEND + '/' + this.props.match.params.username + '/message', {
             method: 'POST',
             body: JSON.stringify(data),
