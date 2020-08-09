@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import logo from '../shemix.svg'
+import banner from '../anonym-banner.svg'
 // import {createHashHistory} from 'history'
 
 // TODO add site name
@@ -93,9 +95,10 @@ class IndexComponent extends React.Component{
           <div>
             {!this.state.username && 
                   <div className="container" style={{textAlign: "center"}}> 
-                <h1>Anonym</h1>
-                <img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym"/>
-                <h4>Safe, Secure, Special</h4>
+                {/* <h1>Anonym</h1>
+                <img src={logo} alt="Anonym" style={{width:"200px", height: "200px"}}/>
+                <h4>Safe, Secure, Special</h4> */}
+                <img src={banner} style={{width:"100%", maxWidth: "720px", margin: "20px 20px"}}/>
                 <h6><Link to="/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
 
 
@@ -110,10 +113,10 @@ class IndexComponent extends React.Component{
                     </div>
                   </div>
                 </div>}
-                <br/><br/>
+                <br/><br/><br/>
                 <div style={{fontSize: "10px"}}>
-                  <b>N© Copyright</b><br/>
-                  Find this on <a href="https://github.com/rahathossain690/Anonym">Github</a>
+                  {/* Find this on <a href="https://github.com/rahathossain690/Anonym">Github</a> */}
+                  Built with <span>❤️</span><br/> Find this on <a href="https://github.com/rahathossain690/Anonym">Github</a>
                 </div>
             </div>
           } { this.state.username && 

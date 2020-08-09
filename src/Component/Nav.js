@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import logo from '../shemix.svg'
 
 function Nav() {
 
   return (
     <nav className="nav-wrapper container-fluid" style={{width: "100%"}}>
         <div>
-        <Link to="/"><span className="brand-logo right"><img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym" style={{height: "50%", width: "50%"}}/></span></Link>
+        <Link to="/"><span className="brand-logo right"><img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym" style={{height: "50px", width: "50px"}}/></span></Link>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
                 {/* <li><Link to="/signin"><span className="waves-effect waves-light btn" style={{marginLeft: "10px 10px"}}>Signin</span></Link></li>
                 <li><Link to="/signup"><span className="waves-effect waves-light btn" style={{margin: "10px 10px"}}>Signup</span></Link></li>
