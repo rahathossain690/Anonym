@@ -11,7 +11,8 @@ class Signup extends React.Component{
             username: "",
             email: "",
             pass: "",
-            cpass: ""
+            cpass: "",
+            loading: false
         }
         this.setUsername = this.setUsername.bind(this)
         this.setEmail = this.setEmail.bind(this)
@@ -42,6 +43,7 @@ class Signup extends React.Component{
             this.setState({error: "passwords don't match"})
             return;
         }
+        this.setState({loading: true})
         const data = {
             username: this.state.username,
             email: this.state.email,
@@ -63,10 +65,10 @@ class Signup extends React.Component{
                 this.setState({error: res.invalid})
             } else{
                 history.push('/')
-                console.log('logged in')
+                this.setState({loading: false})
             }
-          }).catch(err => {
-              console.log(err)
+          }).catch(err => {          
+              this.setState({loading: false})
               this.setState({error: "Error encountered"})
           })
     }
@@ -95,6 +97,19 @@ class Signup extends React.Component{
                     <span className="btn" onClick={this.signup}>Sign up</span>
                     <br/>
                     {this.state.error && <h6 className="red-text">{this.state.error}</h6>}
+
+                    {this.state.loading && <div className="preloader-wrapper small active">
+                        <div className="spinner-layer spinner-green-only">
+                        <div className="circle-clipper left">
+                            <div className="circle"></div>
+                        </div><div className="gap-patch">
+                            <div className="circle"></div>
+                        </div><div className="circle-clipper right">
+                            <div className="circle"></div>
+                        </div>
+                        </div>
+                    </div>}
+                    
                 </div>
                 
             </div>
