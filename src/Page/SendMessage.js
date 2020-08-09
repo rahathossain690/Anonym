@@ -11,7 +11,7 @@ class Send extends React.Component{
         this.state = {
             char : 0,
             exists: true,
-            sent: false,
+            sent: true,
             body: "",
             error: null
         }
@@ -58,7 +58,7 @@ class Send extends React.Component{
           .then(res => {
               console.log(res)
               if(res.ok){
-                  this.setState({sent: true})
+                  this.setState({sent: true, body: ""})
               } if(res.invalid) {
                   this.setState({error: res.invalid})
               }
@@ -75,7 +75,7 @@ class Send extends React.Component{
                     <h3>Send message to {this.props.match.params.username}</h3>
                     <i>{this.state.char}/200</i>
                     <textarea placeholder="write something" value={this.state.body} style={{height: "200px",margin: "10px 10px", padding: "20px 20px"}} onChange={this.setBody}></textarea>
-            <span className="btn" onClick={this.sendMessage}>{this.state.sent? "sent!" : "send"}</span><br/>
+            <span className="btn" onClick={this.sendMessage}>{this.state.sent? "send again?" : "send"}</span><br/>
                     {this.state.error && <b className="red-text">{this.state.error}</b>}
                     <br/>
                     <h6>Let's take a moment and appreciate our near and dear ones.</h6><br/>
@@ -83,12 +83,12 @@ class Send extends React.Component{
             }{!this.state.exists &&
                 <div> 
                     <h3>Anonym is sad</h3>
-                    <img src={Sad} style={{width: "100%"}}></img>
+                    <img src={Sad} style={{width: "80%"}}></img>
                     <h6>This page doesn't exist or the owner is not expecting any message now!</h6>
                 </div>
             }
                 <br/>
-                <Link to="/"><span className="btn">Main Page</span></Link>
+                <Link to="/"><span className="btn">Goto home Page</span></Link>
             </div>
         );
     }
