@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 function Nav() {
 
   return (
-    <nav>
-        <div className="nav-wrapper container">
+    <nav className="nav-wrapper container-fluid" style={{width: "100%"}}>
+        <div>
         <Link to="/"><span className="brand-logo right"><img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym" style={{height: "50%", width: "50%"}}/></span></Link>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
                 {/* <li><Link to="/signin"><span className="waves-effect waves-light btn" style={{marginLeft: "10px 10px"}}>Signin</span></Link></li>
