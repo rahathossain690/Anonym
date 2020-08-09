@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import banner from '../anonym-banner.svg'
 // import {createHashHistory} from 'history'
 
 // TODO add site name
@@ -97,7 +96,7 @@ class IndexComponent extends React.Component{
                 {/* <h1>Anonym</h1>
                 <img src={logo} alt="Anonym" style={{width:"200px", height: "200px"}}/>
                 <h4>Safe, Secure, Special</h4> */}
-                <img src={banner} style={{width:"100%", maxWidth: "720px", margin: "20px 20px"}}/>
+                <img src={this.props.banner} style={{width:"100%", maxWidth: "720px", margin: "20px 20px"}}/>
                 <h6><Link to="/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
 
 
