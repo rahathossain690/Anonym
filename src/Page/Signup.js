@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import history from '../history'
 
 const BACKEND = "https://anonym-rahat.herokuapp.com/api"
@@ -63,7 +62,7 @@ class Signup extends React.Component{
             if(res.invalid){
                 this.setState({error: res.invalid})
             } else{
-                history.push('/')
+                history.push('/Anonym/')
                 console.log('logged in')
             }
           }).catch(err => {

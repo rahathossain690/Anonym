@@ -52,12 +52,12 @@ class App extends React.Component{
       <Router history={history}>
           <Nav/>
           <Switch>
-            <Route path="/" component={() => <Index user={this.state.user} setUser={this.setUser}/>} exact></Route>
-            <Route path="/signup" component={() => <Signup setUser={this.setUser}/>}/>
-            <Route path="/signin" component={() => <Signin setUser={this.setUser}/>}/>
-            <Route path="/signout" component={() => <Signout setUser={this.setUser}/>}/>
-            <Route path="/message" component={Message}/>
-            <Route path="/:username" component={SendMessage}/>
+            <Route path="/Anonym/" component={() => <Index user={this.state.user} setUser={this.setUser}/>} exact></Route>
+            <Route path="/Anonym/signup" component={() => <Signup setUser={this.setUser}/>}/>
+            <Route path="/Anonym/signin" component={() => <Signin setUser={this.setUser}/>}/>
+            <Route path="/Anonym/signout" component={() => <Signout setUser={this.setUser}/>}/>
+            <Route path="/Anonym/message" component={Message}/>
+            <Route path="/Anonym/:username" component={SendMessage}/>
           </Switch>
           {/* <Footer/> */}
       </Router>

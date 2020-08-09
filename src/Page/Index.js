@@ -157,9 +157,9 @@ class IndexComponent extends React.Component{
                   </tbody>
                 </table>
                 <br/>
-                <Link to="/message"><span className="btn" style={{margin: "10px 10px"}}>Message</span></Link>
+                <Link to="/Anonym/message"><span className="btn" style={{margin: "10px 10px"}}>Message</span></Link>
 
-                <Link to="/signout"><span className="btn" style={{margin: "10px 10px"}}>Signout</span></Link>
+                <Link to="/Anonym/signout"><span className="btn" style={{margin: "10px 10px"}}>Signout</span></Link>
 
                 {/* <Link to="/delete"><span className="btn red" style={{margin: "10px 10px"}}>Delete Account</span></Link> */}
             </div>

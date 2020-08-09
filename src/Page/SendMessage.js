@@ -86,6 +86,8 @@ class Send extends React.Component{
                     <h6>This page doesn't exist or the owner is not expecting any message now!</h6>
                 </div>
             }
+                <br/>
+                <Link to="/Anonym/"><span className="btn">Main Page</span></Link>
             </div>
         );
     }

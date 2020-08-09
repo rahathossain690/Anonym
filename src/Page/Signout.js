@@ -22,7 +22,7 @@ class Signout extends React.Component{
               console.log(res)
               if(res.ok){
                   this.props.setUser(null);
-                  history.push('/')
+                  history.push('/Anonym/')
               }
           }).catch(err => {
               console.log(err)

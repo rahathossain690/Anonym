@@ -46,7 +46,7 @@ class Message extends React.Component{
           }).then(res => res.json())
           .then(res => {
               if(res.ok){
-                  history.push('/')
+                  history.push('/Anonym/')
               }
               else {
                   this.setState({array: res, loading: false})
@@ -88,7 +88,7 @@ class Message extends React.Component{
                     </React.Fragment>
                 }
                 <br/>
-                <Link to="/"><span className="btn">Main Page</span></Link>
+                <Link to="/Anonym/"><span className="btn">Main Page</span></Link>
             </div>
         );
     }
