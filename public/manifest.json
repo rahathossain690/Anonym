@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Anonym",
+  "name": "Send me a text anonymously!",
   "icons": [
   ],
-  "start_url": ".",
+  "start_url": "https://anonym-app.herokuapp.com/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
