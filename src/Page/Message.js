@@ -72,7 +72,7 @@ class Message extends React.Component{
                 </div>}
                 { 
                     Array.from(this.state.array).map((item) => {
-                        return <div className="container red accent-2" style={{padding: "20px 20px", marginTop: "10px", borderRadius:"5px", color: "white", border: "2px solid black"}}>
+                        return <div className="container red accent-2" style={{padding: "20px 20px", marginTop: "10px", borderRadius:"5px", color: "white", border: "2px solid black", overflowX: "hidden"}}>
                             <h6>{item.body}</h6>
                             <b>- {item.date.substring(0, 10)} {item.date.substring(11, 19)}</b>
                         </div>
