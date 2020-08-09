@@ -110,7 +110,11 @@ class IndexComponent extends React.Component{
                     </div>
                   </div>
                 </div>}
-
+                <br/><br/>
+                <div style={{fontSize: "10px"}}>
+                  <b>N© Copyright</b><br/>
+                  Find this on <a href="https://github.com/rahathossain690/Anonym">Github</a>
+                </div>
             </div>
           } { this.state.username && 
                 <div className="container" style={{textAlign: "center"}}> 
