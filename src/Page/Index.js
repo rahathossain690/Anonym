@@ -122,7 +122,7 @@ class IndexComponent extends React.Component{
 
 
                 <div className="container" style={{alignSelf: "center", alignContent:"center", textAlign: "center", padding: "10px 10px"}}>
-                  <input style={{backgroundColor: "#2d2d2d", color: "white", padding: "10px 10px", width: "100%"}} value={this.state.sharable_url}/>
+                  <input style={{backgroundColor: "#2d2d2d", color: "white", padding: "10px 10px", width: "100%"}} value={this.state.sharable_url} disabled/>
                   <h6 style={{textAlign: "center"}}>Share Link</h6><br/>
                   <a className="share-btn pinterest" onClick={() => navigator.clipboard.writeText(this.state.sharable_url)}>Copy</a>
                   <a className="share-btn facebook" href={this.state.facebook_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="" data-original-title="Facebook">Facebook</a>
