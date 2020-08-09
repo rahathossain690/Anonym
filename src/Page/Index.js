@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 // import {createHashHistory} from 'history'
 
 // TODO add site name
-const site_url = window.location.origin + '/'
+const site_url = "https://rahathossain690.github.io/Anonym/"
 const BACKEND = "https://anonym-rahat.herokuapp.com/api"
 
 class IndexComponent extends React.Component{
