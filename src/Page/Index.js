@@ -144,19 +144,19 @@ class IndexComponent extends React.Component{
                     <span className="lever"></span>
                   </label>
                 </div>
-                <table className="centered">
+                <table>
                   <tbody>
                     <tr>
-                      <td>Email</td>
-                      <td>{this.state.email}</td>
+                      <td style={{margin: "10px 10px"}}>Email</td>
+                      <td style={{margin: "10px 10px"}}>{this.state.email}</td>
                     </tr>
                     <tr>
-                      <td>Created @</td>
-                      <td>{this.state.date_of_creation}</td>
+                      <td style={{margin: "10px 10px"}}>Account Created</td>
+                      <td style={{margin: "10px 10px"}}>{this.state.date_of_creation}</td>
                     </tr>
                     <tr>
-                      <td>Message</td>
-                      <td>{this.state.total_message}</td>
+                      <td style={{margin: "10px 10px"}}>Messages Recieved</td>
+                      <td style={{margin: "10px 10px"}}>{this.state.total_message}</td>
                     </tr>
                   </tbody>
                 </table>
