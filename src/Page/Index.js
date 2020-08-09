@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import logo from '../shemix.svg'
 import banner from '../anonym-banner.svg'
 // import {createHashHistory} from 'history'
 
