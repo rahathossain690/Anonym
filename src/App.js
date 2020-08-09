@@ -3,7 +3,6 @@ import './App.css';
 import Nav from './Component/Nav';
 import Index from './Page/Index';
 // import Footer from './Component/Footer';
-import banner from './anonym-banner.svg'
 import Signup from './Page/Signup'
 import Signin from './Page/Signin'
 import Signout from './Page/Signout'
@@ -53,7 +52,7 @@ class App extends React.Component{
       <Router history={history}>
           <Nav/>
           <Switch>
-            <Route path="/" component={() => <Index user={this.state.user} setUser={this.setUser} banner={banner}/>} exact></Route>
+            <Route path="/" component={() => <Index user={this.state.user} setUser={this.setUser}/>} exact></Route>
             <Route path="/signup" component={() => <Signup setUser={this.setUser}/>}/>
             <Route path="/signin" component={() => <Signin setUser={this.setUser}/>}/>
             <Route path="/signout" component={() => <Signout setUser={this.setUser}/>}/>
