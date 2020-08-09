@@ -1,5 +1,6 @@
 import React from 'react';
 import Sad from '../sad.jpg'
+import {Link} from 'react-router-dom'
 
 const BACKEND = "https://anonym-rahat.herokuapp.com/api"
 

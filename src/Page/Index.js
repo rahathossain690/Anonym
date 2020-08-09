@@ -96,7 +96,7 @@ class IndexComponent extends React.Component{
                 <h1>Anonym</h1>
                 <img src="https://img.icons8.com/dusk/64/000000/like-message.png" alt="Anonym"/>
                 <h4>Safe, Secure, Special</h4>
-                <h6><Link to="/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
+                <h6><Link to="/Anonym/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/Anonym/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
 
 
                 {this.state.loading === true && <div className="preloader-wrapper active">
