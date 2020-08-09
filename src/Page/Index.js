@@ -127,13 +127,13 @@ class IndexComponent extends React.Component{
                   <a className="share-btn pinterest" onClick={() => navigator.clipboard.writeText(this.state.sharable_url)}>Copy</a>
                   <a className="share-btn facebook" href={this.state.facebook_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="" data-original-title="Facebook">Facebook</a>
                   <a className="share-btn twitter" href={this.state.twitter_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="" data-original-title="Twitter">Twitter</a>
-                  <a className="share-btn linkedin" href={this.state.linkedin_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="LinkedIn" data-toggle="tooltip" title="" data-original-title="LinkedIn">LinkedIn</a>
+                  {/* <a className="share-btn linkedin" href={this.state.linkedin_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="LinkedIn" data-toggle="tooltip" title="" data-original-title="LinkedIn">LinkedIn</a> */}
                   {/* <a className="share-btn reddit"  href="https://reddit.com/submit?url={{share_link}}" target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Reddit" data-toggle="tooltip" title="" data-original-title="Reddit">Reddit</a> */}
                   <a className="share-btn whatsapp" href={this.state.whatsapp_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Whatsapp" data-toggle="tooltip" title="" data-original-title="Whatsapp">Whatsapp</a>
                   {/* <a className="share-btn stumbleupon" href="https://www.tumblr.com/share/link?url={{share_link}}" target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Tumblr" data-toggle="tooltip" title="" data-original-title="Tumblr">Tumblr</a> */}
                   {/* <a className="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{share_link}}" target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Pinterest" data-toggle="tooltip" title="" data-original-title="Pinterest">Pinterest</a> */}
                   {/* <a className="share-btn facebook" href="https://vk.com/share.php?url={{share_link}}" target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Vk" data-toggle="tooltip" title="" data-original-title="Vk">Vk</a> */}
-                  <a className="share-btn email" href={this.state.mail_share_url} target="_self">Email</a>
+                  {/* <a className="share-btn email" href={this.state.mail_share_url} target="_self">Email</a> */}
               </div>
               <br/>
 
