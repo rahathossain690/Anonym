@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  margin-bottom: -50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.share-btn{
+  color: #e2e2e2;
+  margin: 5px 5px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.share-btn:active {
+  padding: 15px 15px;
+}
+
+.share-btn.twitter { background: #55acee; }
+.share-btn.whatsapp { background: #25D366; }
+.share-btn.facebook { background: #3B5998; }
+.share-btn.stumbleupon { background: #EB4823; }
+.share-btn.reddit { background: #ff5700; }
+.share-btn.pinterest { background: red; }
+.share-btn.linkedin    { background: #4875B4; }
+.share-btn.email { background: #444444; }
