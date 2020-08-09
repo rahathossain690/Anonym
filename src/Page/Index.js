@@ -97,7 +97,7 @@ class IndexComponent extends React.Component{
                 {/* <h1>Anonym</h1>
                 <img src={logo} alt="Anonym" style={{width:"200px", height: "200px"}}/>
                 <h4>Safe, Secure, Special</h4> */}
-                <img src="https://doc-0k-6c-docs.googleusercontent.com/docs/securesc/mspoehcecukpoil7sbjvbalujcfdloms/gls7gsauc76f578euoqf6bc9v7eshnd5/1597013475000/17522635524458246999/07237384614080525917/1-pvi0Ygn5BlWzNuHV66izNRrulHN4FDF?authuser=0" style={{width:"100%", maxWidth: "720px", margin: "20px 20px"}}/>
+                <img src="https://i.imgur.com/TQmPsaK.png" style={{width:"100%", maxWidth: "720px", margin: "20px 20px"}}/>
                 <h6><Link to="/signin"><span className="btn waves-effect waves-light">Signin</span></Link> or <Link to="/signup"><span className="waves-effect waves-light btn">Signup</span></Link><br/><br/> Give it a try!</h6>
 
 
