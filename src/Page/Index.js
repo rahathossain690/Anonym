@@ -123,10 +123,10 @@ class IndexComponent extends React.Component{
                 <h3>{this.state.username}</h3>
 
 
-                <div className="container" style={{alignSelf: "center", alignContent:"center", textAlign: "center", padding: "10px 10px"}}>
+                <div className="container" style={{alignSelf: "center", alignContent:"center", textAlign: "center", margin: "10px 10px"}}>
                   <input style={{backgroundColor: "#2d2d2d", color: "white", padding: "10px 10px", width: "100%"}} value={this.state.sharable_url} disabled/>
                   <h6 style={{textAlign: "center"}}>Share Link</h6><br/>
-                  <a className="share-btn pinterest" onClick={() => navigator.clipboard.writeText(this.state.sharable_url)}>Copy</a>
+                  <a className="share-btn pinterest" style={{cursor: "grab"}} onClick={() => navigator.clipboard.writeText(this.state.sharable_url)}>Copy</a>
                   <a className="share-btn facebook" href={this.state.facebook_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="" data-original-title="Facebook">Facebook</a>
                   <a className="share-btn twitter" href={this.state.twitter_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="" data-original-title="Twitter">Twitter</a>
                   {/* <a className="share-btn linkedin" href={this.state.linkedin_share_url} target="_blank" rel="noopener noreferrer" data-placement="top" data-title="LinkedIn" data-toggle="tooltip" title="" data-original-title="LinkedIn">LinkedIn</a> */}

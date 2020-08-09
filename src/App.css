@@ -42,12 +42,13 @@
 .share-btn{
   color: #e2e2e2;
   margin: 5px 5px;
-  padding: 10px 10px;
+  cursor: grab;
+  padding: 7px 7px;
   border-radius: 10px;
 }
 
 .share-btn:active {
-  padding: 15px 15px;
+  padding: 10px 10px;
 }
 
 .share-btn.twitter { background: #55acee; }
